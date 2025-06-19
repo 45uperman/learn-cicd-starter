@@ -4,4 +4,6 @@ RUN apt-get update && apt-get install -y ca-certificates
 
 ADD notely /usr/bin/notely
 
+COPY static /usr/bin/static
+
 CMD ["notely"]
