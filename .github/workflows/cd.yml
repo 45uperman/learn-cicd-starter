@@ -27,6 +27,9 @@ jobs:
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
 
+      - name: Configure Docker
+        run: gcloud auth configure-docker
+
       - name: Build Docker image
         run: docker build . -t "us-central1-docker.pkg.dev/notely-463322/notely-ar-repo/notely:latest"
 
