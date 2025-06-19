@@ -4,6 +4,4 @@ RUN apt-get update && apt-get install -y ca-certificates
 
 ADD notely /usr/bin/notely
 
-ADD static/index.html static/index.html
-
 CMD ["notely"]
